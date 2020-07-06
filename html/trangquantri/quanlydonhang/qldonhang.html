@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cssmain.css">
+    <link rel="stylesheet" href="../css/menutrai.css">
+    <link rel="stylesheet" href="../css/cssmaincontent.css">
+    <link rel="stylesheet" href="../css/cssmaincontentnguoidung.css">
+    <link rel="stylesheet" href="../css/cssmaincontentdonhang.css">
+    <link rel="stylesheet" href="../css/hieuung.css">
+    <link rel="stylesheet" href="../object/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <title>Quản lý đơn hàng </title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu-trai">
+            <div class="menu-trai-container">
+                <div class="menu-trai-container-logo">
+                    <div class="menu-trai-container-logo-has-img">
+                        <a href="../../index2.html">
+                            <img src="../../../object/Images/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="menu-trai-container-logo-content">
+                        <p>Chức năng</p>
+                    </div>
+                    
+                </div>
+                <div class="menu-trai-container-menu">
+                    <ul>
+                        <li>
+                            <a href="../quanlinguoidung/qlnguoidung.html">Quản lý người dùng</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../quanlysanpham/qlsanpham.html">Quản lý sản phẩm</a>
+                        </li>
+                        <li>
+                            <a href="../quanlynguyenlieu/qlnguyenlieu.html">Quản lý nguyên liệu</a>
+                        </li>
+                        <li>
+                            <a href="#">Quản lý đơn hàng </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu-main">
+            <div class="menu-main-header">
+                <div class="menu-main-header-search">
+                    <div class="menu-main-header-search-input">
+                        <input type="text" name="" id="mysearch" placeholder="Tìm kiếm" onkeyup="myFunction()">
+                        <div class="menu-main-header-search-icon" onclick="seacrh()">
+                            <img src="../../../object/img/icontk.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="menu-main-header-about">
+                    <div class="header-about-lenguage">
+                        <img src="../../../object/Images/flag-vn.jpg" alt="">
+                    </div>
+                    <div class="header-about-email">
+                        <img src="../../../object/imgAdmin/email.png" alt="">
+                    </div>
+                    <div class="header-about-ring">
+                        <img src="../../../object/imgAdmin/bell.png" alt="">
+                    </div>
+                    <div class="header-about-user">
+                        <img src="../../../object/imgAdmin/employee.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="menu-main-desc">
+                <div class="menu-main-desc-tittle">
+                    <div class="menu-main-desc-tittle-content">
+                        <div class="menu-main-desc-sum-content">
+                            5
+                        </div>
+                        <div class="menu-main-desc-has-desc">
+                            Số Lượng Đơn Hàng
+                        </div>
+                    </div>
+                    <div class="menu-main-desc-tittle-img">
+                        <img src="../../../object/imgAdmin/profile.png" alt="">
+                    </div>
+                </div>
+                <div class="menu-main-desc-sum">
+                    <div class="menu-main-desc-content">
+                        <div class="menu-main-desc-sum-content">
+                            0
+                        </div>
+                        <div class="menu-main-desc-has-desc">
+                            Doanh Thu
+                        </div>
+                    </div>
+                    <div class="menu-main-desc-tittle-img">
+                        <img src="../../../object/imgAdmin/employee.png" alt="">
+                    </div>
+                </div>
+                <div class="menu-main-desc-sum-value">
+                    <div class="menu-main-desc-content">
+                        <div class="menu-main-desc-sum-content">
+                            
+                        </div>
+                        <div class="menu-main-desc-has-desc">
+                            Tình TrạngĐơn Hàng
+                        </div>
+                    </div>
+                    <div class="menu-main-desc-tittle-img">
+                        <div class="tittle-img-has-img">
+                            <img src="../../../object/icon/32x32/1484686749_Twitter_icon.png" alt="">
+                        </div>
+                        
+                        <div class="main-desc-tittle-img-more">
+                            <div class="tittle-img-more-xac-thuc" onclick="DonHangXacThuc()" >
+                                <span>Đơn hàng xác thực</span>
+                            </div>
+                            <div class="tittle-img-more-chua-xac-thuc" onclick="DonHangChuaXacThuc()">
+                                <span>Đơn hàng chưa xác thực</span>
+                            </div>
+                            <div class="tittle-img-more-thanh-toan" onclick="DonHangThanhToan()">
+                                <span>Đon hàng thanh toán</span> 
+                            </div>
+                            <div class="tittle-img-more-thanh-toan" onclick="TatCaDonHang()">
+                                <span>Tất cả đơn hàng</span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-main-container">
+                <div class="menu-main-container-header">
+                    <div class="menu-main-container-tittle">
+                        <h3>
+                            Danh sách đơn hàng
+                        </h3>
+                    </div>
+                    <div class="menu-main-container-button-them">
+                        <div class="button-them-icon">
+                            <img src="../../../object/icon/16x16/if_insert-object_23421.png" alt="">
+                        </div>
+                        <div class="button-them-content">
+                            <span>Thêm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-main-container-main">
+                    <table class="bangsanpham" id="bangsanphamid">
+                        <thead class="tieudebangsanpham">
+                            <tr>
+                                <th>STT</th>
+                                <th>Mã ĐH</th>
+                                <th>Tên</th>
+                                <th>Nơi nhận</th>
+                                <th>Điện thoại </th>
+                                <th>Số Tiền</th>
+                                <th>Ngày</th>
+                                <th>Trạng Thái</th>
+                                <th>Chức Năng</th>
+                            </tr>
+                        </thead>
+                        <tbody class="thanbangsanpham">
+                            <tr class="">
+                                <td>1</td>
+                                <td>DH001</td>
+                                <td>Tuấn Anh</td>
+                                <td>32-Hoàng Quốc Việt</td>
+                                <td>0984183456</td>
+                                <td>45000</td>
+                                <td>12-12-2018</td>
+                                <td>Chưa Xác Thực</td>
+                                <td>
+                                    <div class="chucnang">
+                                        <div class="chucnang-hienthi" onclick="goiHienThi(this)">
+                                            <img src="../../../object/imgAdmin/binoculars.png" alt="">
+                                        </div>
+                                        <div class="chucnang-xoa" onclick="nutXoa(this)">
+                                            <img src="../../../object/imgAdmin/delete.png" alt="">
+                                        </div>
+                                        <div class="chucnang-sua" onclick="getGiaTri(this)">
+                                            <img src="../../../object/imgAdmin/edit.png" alt="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>DH002</td>
+                                <td>Hưng</td>
+                                <td>405-Xuân Đỉnh</td>
+                                <td>
+                                    0876123867
+                                </td>
+                                <td>90000</td>
+                                <td>11-03-2019</td>
+                                <td>Xác Thực</td>
+                                <td>
+                                    <div class="chucnang">
+                                        <div class="chucnang-hienthi" onclick="goiHienThi(this)">
+                                            <img src="../../../object/imgAdmin/binoculars.png" alt="">
+                                        </div>
+                                        <div class="chucnang-xoa" onclick="nutXoa(this)">
+                                            <img src="../../../object/imgAdmin/delete.png" alt="">
+                                        </div>
+                                        <div class="chucnang-sua" onclick="getGiaTri(this)">
+                                            <img src="../../../object/imgAdmin/edit.png" alt="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>DH003</td>
+                                <td>Dũng</td>
+                                <td>An Vĩ - Khoái Châu</td>
+                                <td>
+                                    0876123867
+                                </td>
+                                <td>55000</td>
+                                <td>15-06-2020</td>
+                                <td>Xác Thực</td>
+                                <td>
+                                    <div class="chucnang">
+                                        <div class="chucnang-hienthi" onclick="goiHienThi(this)">
+                                            <img src="../../../object/imgAdmin/binoculars.png" alt="">
+                                        </div>
+                                        <div class="chucnang-xoa" onclick="nutXoa(this)">
+                                            <img src="../../../object/imgAdmin/delete.png" alt="">
+                                        </div>
+                                        <div class="chucnang-sua" onclick="getGiaTri(this)">
+                                            <img src="../../../object/imgAdmin/edit.png" alt="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>DH004</td>
+                                <td>Hiệt</td>
+                                <td>Thái Bình</td>
+                                <td>
+                                    0876123867
+                                </td>
+                                <td>60000</td>
+                                <td>23-06-2020</td>
+                                <td>Xác Thực</td>
+                                <td>
+                                    <div class="chucnang">
+                                        <div class="chucnang-hienthi" onclick="goiHienThi(this)">
+                                            <img src="../../../object/imgAdmin/binoculars.png" alt="">
+                                        </div>
+                                        <div class="chucnang-xoa" onclick="nutXoa(this)">
+                                            <img src="../../../object/imgAdmin/delete.png" alt="">
+                                        </div>
+                                        <div class="chucnang-sua" onclick="getGiaTri(this)">
+                                            <img src="../../../object/imgAdmin/edit.png" alt="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>1</td>
+                                <td>3</td>
+                                <td>Sữa tươi</td>
+                                <td>Vinmart</td>
+                                <td>
+                                    0876123867
+                                </td>
+                                <td>70000</td>
+                                <td>14-02-2020</td>
+                                <td>Xác Thực</td>
+                                <td>
+                                    <div class="chucnang">
+                                        <div class="chucnang-hienthi" onclick="goiHienThi(this)">
+                                            <img src="../../../object/imgAdmin/binoculars.png" alt="">
+                                        </div>
+                                        <div class="chucnang-xoa" onclick="nutXoa(this)">
+                                            <img src="../../../object/imgAdmin/delete.png" alt="">
+                                        </div>
+                                        <div class="chucnang-sua" onclick="getGiaTri(this)">
+                                            <img src="../../../object/imgAdmin/edit.png" alt="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>4</td>
+                                <td>Sữa Đặc</td>
+                                <td>Vinmart</td>
+                                <td>
+                                    0876123867
+                                </td>
+                                <td>86000</td>
+                                <td>12-04-2020</td>
+                                <td>Xác Thực</td>
+                                <td>
+                                    <div class="chucnang">
+                                        <div class="chucnang-hienthi" onclick="goiHienThi(this)">
+                                            <img src="../../../object/imgAdmin/binoculars.png" alt="">
+                                        </div>
+                                        <div class="chucnang-xoa" onclick="nutXoa(this)">
+                                            <img src="../../../object/imgAdmin/delete.png" alt="">
+                                        </div>
+                                        <div class="chucnang-sua" onclick="getGiaTri(this)">
+                                            <img src="../../../object/imgAdmin/edit.png" alt="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>4</td>
+                                <td>Sữa Đặc</td>
+                                <td>Vinmart</td>
+                                <td>
+                                    0876123867
+                                </td>
+                                <td>86000</td>
+                                <td>12-04-2020</td>
+                                <td>Thanh Toán</td>
+                                <td>
+                                    <div class="chucnang">
+                                        <div class="chucnang-hienthi" onclick="goiHienThi(this)">
+                                            <img src="../../../object/imgAdmin/binoculars.png" alt="">
+                                        </div>
+                                        <div class="chucnang-xoa" onclick="nutXoa(this)">
+                                            <img src="../../../object/imgAdmin/delete.png" alt="">
+                                        </div>
+                                        <div class="chucnang-sua" onclick="getGiaTri(this)">
+                                            <img src="../../../object/imgAdmin/edit.png" alt="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-them them">
+        <div class="table-them-container">
+            <div class="table-them-header">
+                <span>Thêm nguyên liệu</span>
+                <div class="button-thoat">
+                    <img src="../../../object/icon/32x32/1484685359_Remove.png" alt="">
+                </div>
+            </div>
+            <div class="table-them-containers">
+                <div class="table-them-container-code">
+                    <div class="container-code-sp">
+                        <span>Mã đơn hàng</span>
+                        
+                        <input type="text" name="" id="ma-don-hang">
+                    </div>
+                    <div class="container-code-lsp">
+                        <span>Tên khách hàng</span>
+                        
+                        <input type="text" name="" id="ten-don-hang">
+                    </div>
+                </div>
+                <div class="table-them-container-desc">
+                    <div class="container-desc-name">
+                        <span>Nơi nhận</span>
+                        <input type="text" name="" id="noi-nhan">
+                    </div>
+                    <div class="container-desc-img">
+                        <span>Số điện thoại</span>
+                        <input type="number" name="" id="so-dien-thoai">
+                    </div>
+    
+                </div>
+                <div class="table-them-container-cash">
+                    <div class="container-cash-sum">
+                        <span>Số tiền</span>
+                        <input type="number" name="" id="so-tien" min ="0">
+                    </div>
+                    <div class="container-cash-goc">
+                        <span>Ngày</span>
+                        <input type="date" name="" id="ngay">
+                    </div>
+                    <div class="container-cash-ban">
+                        <span>Trạng thái</span>
+                        <select name="" id="trang-thai">
+                            <option value="Xác Thực" selected="selected">Xác Thực</option>
+                            <option value="Chưa Xác Thực">Chưa Xác Thực</option>
+                            <option value="Thanh Toán">Thanh Toán</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-them-container-chuc-nang">
+                    <div class="table-them-container-chuc-nang-them" onclick="themsanpham()">
+                        <img src="../../../object/imgAdmin/checked.png" alt="">
+                        <span>
+                            Thêm
+                        </span> 
+                    </div>
+                    <div class="table-them-container-chuc-nang-huy " onclick="nutHuy((this))"  >
+                       <img src="../../../object/icon/32x32/1484685748_Cancel.png" alt="">
+                        <span>
+                            Hủy
+                       </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-them sua">
+        <div class="table-them-container">
+            <div class="table-them-header">
+                <span>Sửa thông tin</span>
+                <div class="button-thoat">
+                    <img src="../../../object/icon/32x32/1484685359_Remove.png" alt="">
+                </div>
+            </div>
+            <div class="table-them-containers">
+                <div class="table-them-container-code">
+                    <div class="container-code-sp">
+                        <span>Mã đơn hàng</span>
+                        
+                        <input type="text" name="" id="sua-ma-don-hang" disabled>
+                    </div>
+                    <div class="container-code-lsp">
+                        <span>Tên khách hàng</span>
+                        
+                        <input type="text" name="" id="sua-ten-don-hang">
+                    </div>
+                </div>
+                <div class="table-them-container-desc">
+                    <div class="container-desc-name">
+                        <span>Địa điểm</span>
+                        <input type="text" name="" id="sua-dia-diem">
+                    </div>
+                    <div class="container-desc-img">
+                        <span>Điện thoại</span>
+                        <input type="number" name="" id="sua-so-dien-thoai">
+                    </div>
+                </div>
+                <div class="table-them-container-cash">
+                    <div class="container-cash-sum">
+                        <span>Số tiền</span>
+                        <input type="number" name="" id="sua-so-tien" min ="0">
+                    </div>
+                    <div class="container-cash-goc">
+                        <span>Ngày</span>
+                        <input type="date" name="" id="sua-ngay" value="2020-01-03">
+                    </div>
+                    <div class="container-cash-ban">
+                        <span>Trạng thái</span>
+                        <select name="" id="sua-trang-thai">
+                            <option value="Xác Thực" selected="selected">Xác Thực</option>
+                            <option value="Chưa Xác Thực">Chưa Xác Thực</option>
+                            <option value="Thanh Toán">Thanh Toán</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-them-container-chuc-nang">
+                    <div class="table-them-container-chuc-nang-them" onclick="nutSua($(this))">
+                        <img src="../../../object/imgAdmin/checked.png" alt="">
+                        <span>
+                            Sửa
+                        </span> 
+                    </div>
+                    <div class="table-them-container-chuc-nang-huy" onclick="nutHuy($(this))" >
+                       <img src="../../../object/icon/32x32/1484685748_Cancel.png" alt="">
+                        <span>
+                            Hủy
+                       </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-them thong-tin">
+        <div class="table-them-container">
+            <div class="table-them-header">
+                <span>Thông tin sản phẩm</span>
+                <div class="button-thoat">
+                    <img src="../../../object/icon/32x32/1484685359_Remove.png" alt="">
+                </div>
+            </div>
+            <div class="table-them-containers">
+                <div class="table-them-container-code">
+                    <div class="container-code-sp">
+                        <span>Mã nguyên liệu</span>
+                        <input type="text" name="" id="thong-tin-ma-don-hang">
+                    </div>
+                    <div class="container-code-lsp">
+                        <span>Tên nguyên liệu</span>
+                        <input type="text" name="" id="thong-tin-ten-don-hang">
+                    </div>
+                </div>
+                <div class="table-them-container-desc">
+                    <div class="container-desc-name">
+                        <span>Địa điểm</span>
+                        <input type="text" name="" id="thong-tin-dia-diem">
+                    </div>
+                    <div class="container-desc-img">
+                        <span>Số điện thoại</span>
+                        <input type="number" name="" id="thong-tin-so-dien-thoai">
+                    </div>
+    
+                </div>
+                <div class="table-them-container-cash">
+                    <div class="container-cash-sum">
+                        <span>Số tiền</span>
+                        <input type="number" name="" id="thong-tin-so-tien" min ="0">
+                    </div>
+                    <div class="container-cash-goc">
+                        <span>Ngày</span>
+                        <input type="date" name="" id="thong-tin-ngay" value="2020-01-03">
+                    </div>
+                    <div class="container-cash-ban">
+                        <span>Trạng thái</span>
+                        <select name="" id="thong-tin-trang-thai">
+                            <option value="Xác thực" selected="selected">Xác thực</option>
+                            <option value="Chưa xác thực">Chưa xác thực</option>
+                            <option value="Thanh Toán">Thanh toán</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="jsquanlydonhang.js"></script>
+</body>
+</html>

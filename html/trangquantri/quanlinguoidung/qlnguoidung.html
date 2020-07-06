@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cssmain.css">
+    <link rel="stylesheet" href="../css/menutrai.css">
+    <link rel="stylesheet" href="../css/cssmaincontent.css">
+    <link rel="stylesheet" href="../css/cssmaincontentnguoidung.css">
+    <link rel="stylesheet" href="../css/hieuung.css">
+    <link rel="stylesheet" href="../object/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <title>Quản lý người dùng</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu-trai">
+            <div class="menu-trai-container">
+                <div class="menu-trai-container-logo">
+                    <div class="menu-trai-container-logo-has-img">
+                        <a href="../../index2.html">
+                            <img src="../../index2.html" alt="">
+                        </a>
+                    </div>
+                    <div class="menu-trai-container-logo-content">
+                        <p>Các chức năng</p>
+                    </div>
+                    
+                </div>
+                <div class="menu-trai-container-menu">
+                    <ul>
+                        <li>
+                            <a href="#">Quản lý người dùng</a>
+                        </li>
+                        <li>
+                            <a href="#">Quản lý sản phẩm</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Quản lý nguyên liệu</a>
+                        </li>
+                        <li>
+                            <a href="#">Quản lý đơn hàng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu-main">
+            <div class="menu-main-header">
+                <div class="menu-main-header-search">
+                    <div class="menu-main-header-search-input">
+                        <input type="text" name="" id="mysearch" placeholder="Tìm kiếm" onkeyup="myFunction()">
+                        <div class="menu-main-header-search-icon" onclick="seacrh()">
+                            <img src="../../../object/img/icontk.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="menu-main-header-about">
+                    <div class="header-about-lenguage">
+                        <img src="../../../object/Images/flag-vn.jpg" alt="">
+                    </div>
+                    <div class="header-about-email">
+                        <img src="../../../object/imgAdmin/email.png" alt="">
+                    </div>
+                    <div class="header-about-ring">
+                        <img src="../../../object/imgAdmin/bell.png" alt="">
+                    </div>
+                    <div class="header-about-user">
+                        <img src="../../../object/imgAdmin/employee.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="menu-main-desc">
+                <div class="menu-main-desc-tittle">
+                    <div class="menu-main-desc-tittle-content">
+                        <div class="menu-main-desc-sum-content">
+                            5
+                        </div>
+                        <div class="menu-main-desc-has-desc">
+                            Số Lượng Người dùng
+                        </div>
+                    </div>
+                    <div class="menu-main-desc-tittle-img">
+                        <img src="../../../object/imgAdmin/profile.png" alt="">
+                    </div>
+                </div>
+                <div class="menu-main-desc-sum">
+                    <div class="menu-main-desc-content">
+                        <div class="menu-main-desc-sum-content">
+                            0
+                        </div>
+                        <div class="menu-main-desc-has-desc">
+                            Chức vụ
+                        </div>
+                    </div>
+                    <div class="menu-main-desc-tittle-img">
+                        <img src="../../../object/imgAdmin/employee.png" alt="">
+                    </div>
+                </div>
+                <div class="menu-main-desc-sum-value">
+                    <div class="menu-main-desc-content">
+                        <div class="menu-main-desc-sum-content">
+                            0
+                        </div>
+                        <div class="menu-main-desc-has-desc">
+                            Tồn Tại
+                        </div>
+                    </div>
+                    <div class="menu-main-desc-tittle-img">
+                        <img src="../../../object/icon/32x32/1484686749_Twitter_icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="menu-main-container">
+                <div class="menu-main-container-header">
+                    <div class="menu-main-container-tittle">
+                        <h3>
+                            Danh sách người dùng
+                        </h3>
+                    </div>
+                    <div class="menu-main-container-button-them">
+                        <div class="button-them-icon">
+                            <img src="../../../object/icon/16x16/if_insert-object_23421.png" alt="">
+                        </div>
+                        <div class="button-them-content">
+                            <span>Thêm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-main-container-main">
+                    <table class="bangsanpham" id="bangsanphamid">
+                        <thead class="tieudebangsanpham">
+                            <tr>
+                                <th>STT</th>
+                                <th>Mã User</th>
+                                <th>Tài Khoản</th>
+                                <th>Mật Khẩu</th>
+                                <th>Chức Vụ</th>
+                                <th>Tạo Ngày</th>
+                                <th>Tình Trạng</th>
+                                <th>Chức Năng</th>
+                            </tr>
+                        </thead>
+                        <tbody class="thanbangsanpham">
+                            <tr class="">
+                                <td>1</td>
+                                <td>ND001</td>
+                                <td>nguyentuananh</td>
+                                <td>tuananh010320</td>
+                                <td>
+                                    Nhân Viên
+                                </td>
+                                <td>20-10-2018</td>
+                                <td>Tồn tại</td>
+                                <td>
+                                    <div class="chucnang">
+                                        <div class="chucnang-hienthi" onclick="goiHienThi(this)">
+                                            <img src="../../../object/imgAdmin/binoculars.png" alt="">
+                                        </div>
+                                        <div class="chucnang-xoa" onclick="nutXoa(this)">
+                                            <img src="../../../object/imgAdmin/delete.png" alt="">
+                                        </div>
+                                        <div class="chucnang-sua" onclick="getGiaTri(this)">
+                                            <img src="../../../object/imgAdmin/edit.png" alt="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>ND002</td>
+                                <td>quantriadmin</td>
+                                <td>admin022</td>
+                                <td>
+                                    Khách Hàng
+                                </td>
+                                <td>20-10-2018</td>
+                                <td>Tồn tại</td>
+                                <td>
+                                    <div class="chucnang">
+                                        <div class="chucnang-hienthi" onclick="goiHienThi(this)">
+                                            <img src="../../../object/imgAdmin/binoculars.png" alt="">
+                                        </div>
+                                        <div class="chucnang-xoa" onclick="nutXoa(this)">
+                                            <img src="../../../object/imgAdmin/delete.png" alt="">
+                                        </div>
+                                        <div class="chucnang-sua" onclick="getGiaTri(this)">
+                                            <img src="../../../object/imgAdmin/edit.png" alt="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>1</td>
+                                <td>ND003</td>
+                                <td>nguoilaoi</td>
+                                <td>deptraicogilasai</td>
+                                <td>
+                                    Quản lý
+                                </td>
+                                <td>20-10-2018</td>
+                                <td>Tồn tại</td>
+                                <td>
+                                    <div class="chucnang">
+                                        <div class="chucnang-hienthi" onclick="goiHienThi(this)">
+                                            <img src="../../../object/imgAdmin/binoculars.png" alt="">
+                                        </div>
+                                        <div class="chucnang-xoa" onclick="nutXoa(this)">
+                                            <img src="../../../object/imgAdmin/delete.png" alt="">
+                                        </div>
+                                        <div class="chucnang-sua" onclick="getGiaTri(this)">
+                                            <img src="../../../object/imgAdmin/edit.png" alt="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>ND004</td>
+                                <td>Suimlangkhong</td>
+                                <td>ditimlesong</td>
+                                <td>
+                                    Quản lý
+                                </td>
+                                <td>20-10-2018</td>
+                                <td>Tồn tại</td>
+                                <td>
+                                    <div class="chucnang">
+                                        <div class="chucnang-hienthi" onclick="goiHienThi(this)">
+                                            <img src="../../../object/imgAdmin/binoculars.png" alt="">
+                                        </div>
+                                        <div class="chucnang-xoa" onclick="nutXoa(this)">
+                                            <img src="../../../object/imgAdmin/delete.png" alt="">
+                                        </div>
+                                        <div class="chucnang-sua" onclick="getGiaTri(this)">
+                                            <img src="../../../object/imgAdmin/edit.png" alt="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr  class="">
+                                <td>1</td>
+                                <td>ND005</td>
+                                <td>tuananh010320</td>
+                                <td>tuananh010320</td>
+                                <td>
+                                    Quản lý
+                                </td>
+                                <td>20-10-2018</td>
+                                <td>Không</td>
+                                <td>
+                                    <div class="chucnang">
+                                        <div class="chucnang-hienthi" onclick="goiHienThi(this)">
+                                            <img src="../../../object/imgAdmin/binoculars.png" alt="">
+                                        </div>
+                                        <div class="chucnang-xoa" onclick="nutXoa(this)">
+                                            <img src="../../../object/imgAdmin/delete.png" alt="">
+                                        </div>
+                                        <div class="chucnang-sua" onclick="getGiaTri(this)">
+                                            <img src="../../../object/imgAdmin/edit.png" alt="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-them them">
+        <div class="table-them-container">
+            <div class="table-them-header">
+                <span>Thêm người dùng</span>
+                <div class="button-thoat">
+                    <img src="../../../object/icon/32x32/1484685359_Remove.png" alt="">
+                </div>
+            </div>
+            <div class="table-them-containers">
+                <div class="table-them-container-code">
+                    <div class="container-code-sp">
+                        <span>Mã người dùng</span>
+                        
+                        <input type="text" name="" id="ma-nguoi-dung">
+                    </div>
+                    <div class="container-code-lsp">
+                        <span>Tài khoản</span>
+                        
+                        <input type="text" name="" id="tai-khoan">
+                    </div>
+                </div>
+                <div class="table-them-container-desc">
+                    <div class="container-desc-name">
+                        <span>Mật khẩu</span>
+                        <input type="text" name="" id="mat-khau">
+                    </div>
+                    <div class="container-desc-img">
+                        <span>Chức Vụ</span>
+                        <select id="chuc-vu">
+                            <option value="Nhân Viên"selected="selected" >Nhân Viên</option>
+                            <option value="Khách Hàng">Khách Hàng</option>
+                            <option value="Quản Lý">Quản Lý</option>
+                        </select>
+                    </div>
+    
+                </div>
+                <div class="table-them-container-cash">
+                    <div class="container-cash-sum">
+                        <span>Tạo ngày</span>
+                        <input type="date" name="" id="ngay-tao"  data-date="" data-date-format="DD MMMM YYYY" value="2020-01-03">
+                    </div>
+                    <div class="container-cash-goc">
+                        <span>Tình trạng</span>
+                        <select id="tinh-trang">
+                            <option value="Tồn Tại"selected="selected" >Tồn tại</option>
+                            <option value="Không">Không</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-them-container-chuc-nang">
+                    <div class="table-them-container-chuc-nang-them" onclick="themsanpham()">
+                        <img src="../../../object/imgAdmin/checked.png" alt="">
+                        <span>
+                            Thêm
+                        </span> 
+                    </div>
+                    <div class="table-them-container-chuc-nang-huy " onclick="nutHuy((this))"  >
+                       <img src="../../../object/icon/32x32/1484685748_Cancel.png" alt="">
+                        <span>
+                            Hủy
+                       </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-them sua">
+        <div class="table-them-container">
+            <div class="table-them-header">
+                <span>Sửa thông tin</span>
+                <div class="button-thoat">
+                    <img src="../../../object/icon/32x32/1484685359_Remove.png" alt="">
+                </div>
+            </div>
+            <div class="table-them-containers">
+                <div class="table-them-container-code">
+                    <div class="container-code-sp">
+                        <span>Mã người dùng</span>
+                        
+                        <input type="text" name="" id="sua-ma-nguoi-dung" disabled>
+                    </div>
+                    <div class="container-code-lsp">
+                        <span>Tài khoản</span>
+                        
+                        <input type="text" name="" id="sua-tai-khoan">
+                    </div>
+                </div>
+                <div class="table-them-container-desc">
+                    <div class="container-desc-name">
+                        <span>Mật khẩu</span>
+                        <input type="text" name="" id="sua-mat-khau">
+                    </div>
+                    <div class="container-desc-img">
+                        <span>Chức Vụ</span>
+                        <select id="sua-chuc-vu">
+                            <option value="Nhân Viên"selected="selected" >Nhân Viên</option>
+                            <option value="Khách Hàng">Khách Hàng</option>
+                            <option value="Quản Lý">Quản Lý</option>
+                        </select>
+                    </div>
+    
+                </div>
+                <div class="table-them-container-cash">
+                    <div class="container-cash-sum">
+                        <span>Tạo ngày</span>
+                        <input type="date" name="" id="sua-ngay-tao" value="2020-01-03" >
+                    </div>
+                    <div class="container-cash-goc">
+                        <span>Tình trạng</span>
+                        <select id="sua-tinh-trang">
+                            <option value="Tồn Tại"selected="selected" >Tồn tại</option>
+                            <option value="Không">Không</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-them-container-chuc-nang">
+                    <div class="table-them-container-chuc-nang-them" onclick="nutSua($(this))">
+                        <img src="../../../object/imgAdmin/checked.png" alt="">
+                        <span>
+                            Sửa
+                        </span> 
+                    </div>
+                    <div class="table-them-container-chuc-nang-huy" onclick="nutHuy($(this))" >
+                       <img src="../../../object/icon/32x32/1484685748_Cancel.png" alt="">
+                        <span>
+                            Hủy
+                       </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-them thong-tin">
+        <div class="table-them-container">
+            <div class="table-them-header">
+                <span>Thông tin sản phẩm</span>
+                <div class="button-thoat">
+                    <img src="../../../object/icon/32x32/1484685359_Remove.png" alt="">
+                </div>
+            </div>
+            <div class="table-them-containers">
+                <div class="table-them-container-code">
+                    <div class="container-code-sp">
+                        <span>Mã người dùng</span>
+                        
+                        <input type="text" name="" id="thong-tin-ma-nguoi-dung">
+                    </div>
+                    <div class="container-code-lsp">
+                        <span>Tài khoản</span>
+                        
+                        <input type="text" name="" id="thong-tin-tai-khoan">
+                    </div>
+                </div>
+                <div class="table-them-container-desc">
+                    <div class="container-desc-name">
+                        <span>Mật khẩu</span>
+                        <input type="text" name="" id="thong-tin-mat-khau">
+                    </div>
+                    <div class="container-desc-img">
+                        <span>Chức Vụ</span>
+                        <select id="thong-tin-chuc-vu">
+                            <option value="Nhân Viên"selected="selected" >Nhân Viên</option>
+                            <option value="Khách Hàng">Khách Hàng</option>
+                            <option value="Quản Lý">Quản Lý</option>
+                        </select>
+                    </div>
+    
+                </div>
+                <div class="table-them-container-cash">
+                    <div class="container-cash-sum">
+                        <span>Tạo ngày</span>
+                        <input type="date" name="" id="thong-tin-ngay-tao" value="2020-01-03">
+                    </div>
+                    <div class="container-cash-goc">
+                        <span>Tình trạng</span>
+                        <select id="thong-tin-tinh-trang">
+                            <option value="Tồn Tại"selected="selected" >Tồn tại</option>
+                            <option value="Không">Không</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="qlnguoidung.js"></script>
+</body>
+</html>

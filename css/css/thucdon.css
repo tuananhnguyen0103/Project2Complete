@@ -1,0 +1,130 @@
+.has-content{
+    padding-top: 2.4rem;
+    padding-bottom: 2rem;
+
+}
+.has-content a{
+    text-decoration: none;
+}
+.has-content-container{
+    padding: 0rem 1rem;
+    margin: 0rem auto;
+    width: 100%;
+    max-width: 1200px;
+}
+.has-content:nth-child(1){
+    background-image: url(../../html/thucdon/img/menu-PSD-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.has-content:nth-child(2){
+    background-image: url(../../html/thucdon/img/menu-FREEZE.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.has-content:nth-child(2) .has-content-container-has-item-img{
+    display: flex;
+    justify-content: flex-start;
+}
+.has-content:nth-child(3){
+    background-image: url(../../html/thucdon/img/menu-TEA-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.has-content:nth-child(4){
+    background-image: url(../../html/thucdon/img/menu-BANHMI-bg_2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.has-content:nth-child(4) .has-item-img-banh-mi{
+    width: 90%;
+}
+.has-content-container-has-item{
+    display: flex;
+    position: relative;
+    top: 2.1rem;
+    color: antiquewhite;
+}
+.cafe a{
+    color: #faebd7;
+}
+.freeze a{
+    color: #006400;
+}
+.has-content-container-has-item .freeze{
+    color: #006400;
+}
+.has-content-container-has-item-caption{
+    width: 50%;
+}
+.has-content-container-has-item-img{
+    
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.has-item-caption-title{
+    animation-delay: 0.3s;
+    margin-bottom: 1.3rem;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+
+}
+.has-item-caption-title h3{
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.has-item-caption-title h3 a{
+    font-size: 3rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: inherit;
+    display: block;
+    font-weight: normal !important;
+    transition: all 0.3s linear;
+}
+.has-item-caption-title h3 a:hover{
+    color: #b22830;
+}
+
+.has-item-caption-desc{
+    animation-delay: 0.3s;
+    margin-bottom: 2.3rem;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.has-item-caption-more{
+    animation-delay: 0.3s;
+    margin-bottom: 2.3rem;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
+.has-item-caption-more a{
+    animation-delay: 0.7s;
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    color: inherit;
+    border: solid 1px #ffffff;
+    border-color: inherit;
+    padding: 0.8rem 4rem;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+    background: transparent;
+    transition: all 0.3s linear;
+}
+.has-item-caption-more a:hover{
+    background-color: #b22830;
+    border-color: #b22830;
+
+}
+.freeze .has-item-caption-more a:hover{
+    color: #fff;
+}
+

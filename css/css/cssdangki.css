@@ -1,0 +1,140 @@
+.menu{
+    height: 30rem;
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+    background-image: url(../../html/thucdon/img/hand-drawn-coffee-beans-vintage-sketch-coffee-vector-26316481.jpg);
+}
+.menu-wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+.menu-wrapper-container{
+    width: 100%;
+    height: 100%;
+}
+.wrapper-container-content-tittle{
+    height: 8rem;
+}
+.wrapper-container-content-tittle h3{
+    font-size: 3rem;
+    color: #bb3333;
+}
+.wrapper-container-content-tittle,
+.wrapper-container-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gender td:nth-child(2){
+    display: flex;
+}
+.gender td:nth-child(2) label{
+    width: 33.333333333%;
+    margin: 0 0.5rem;
+}
+.wrapper-container-content-more{
+    margin-left: 5rem;
+    width: 50%;
+}
+.wrapper-container-content-table{
+    margin-right: 5rem;
+    width: 50%;
+}
+.container-content-more-facebook,
+.container-content-more-twiter,
+.container-content-more-google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33.3333333333333%;
+    margin: 0.5rem;
+}
+.logo-more-facebook,
+.logo-more-twiter,
+.logo-more-google{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.more-facebook-content,
+.more-twiter,
+.more-google{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 1.4rem;
+}
+.logo-more-facebook img,
+.logo-more-twiter img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.logo-more-google img{
+    width: 4rem;
+    height: 3rem;
+}
+.wrapper-container-content-table{
+    background-color: #bb3333;
+    height: 20rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    color: #fff;
+}
+.dang-nhap.wrapper-container-content-table{
+    background-color: #bb3333;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    color: #fff;
+}
+form{
+    height: 100%;
+}
+table{
+    width: 100%;
+    height: 100%;
+}
+.wrapper-container-content-table table tr{
+    margin: 1rem;
+}
+.wrapper-container-content-table table tr>td{
+    width: 50%;
+    padding-left: 2rem;
+    
+}
+.wrapper-container-content-table table tr td:nth-child(2){
+    width: 50%;
+}
+.dang-nhap-dang-ki td input{
+    border-radius: 0.5rem;
+    width: 4rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.dang-nhap-dang-ki td input:hover{
+    border: 1px solid #fff;
+    background-color: #bb3333;
+    cursor: pointer;
+    color: #fff;
+
+}
+.dang-nhap-dang-ki td #dang-nhap{
+    height: 1.5rem;
+    width: 5rem;
+    position: relative;
+    left: 20rem;
+}
+.dang-nhap-dang-ki td #quen-mat-khau{
+    width: 6rem;
+    height: 1.5rem;
+    position: relative;
+    left: -1rem;
+}

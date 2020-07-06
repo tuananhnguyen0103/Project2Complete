@@ -1,0 +1,430 @@
+
+/*menu main*/
+.menu-main{
+    margin-left: 16rem;
+    width: 90%;
+    height: 100vh;
+    padding: 0rem 1rem;
+}
+.menu-main-header{
+    margin-top: 1rem;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+}
+.menu-main-header-about{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+}
+.header-about-lenguage,
+.header-about-email,
+.header-about-ring,
+.header-about-user{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    height: 40%;
+    display: flex;
+    cursor: pointer;
+}
+.menu-main-header-about img{
+    height: 70%;
+    background-size: cover;
+    width: auto;
+}
+.header-about-user{
+    top: -1rem;
+    position: relative;
+    height: 60%;
+    width: auto;
+    border-radius: 2rem;
+    border: 1px solid #b53;
+    overflow: hidden;
+}
+.header-about-user img{
+    height: 100%;
+}
+.menu-main-header-search{
+    height: 100%;
+    width: 50%;
+    margin: 0rem 1rem;
+    display: flex;
+    align-items: center;
+}
+.menu-main-header-search-input{
+    height: 40%;
+    width: 80%;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -2rem;
+}
+.menu-main-header-search-input input{
+    height: 100%;
+    width: 100%;
+    font-style: italic;
+    font-size: 1rem;
+    padding-left: 1rem;
+    border-radius: 3rem;
+    outline: none;
+}
+.menu-main-header-search-icon{
+    position: absolute;
+    right: 1rem;
+    height:60%;
+    width: auto;
+    cursor: pointer;
+}
+.menu-main-header-search-icon img{
+    height: 100%;
+    width: auto;
+}
+.menu-main-header-about{
+    height: 100%;
+    width: 50%;
+    margin: 0rem 1rem;
+}
+
+.menu-main-desc{
+    width: 100%;
+    display: flex;
+}
+
+.menu-main-container{
+    border: 1px solid #b53;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+.menu-main-container-header{
+    margin-bottom: 1rem;
+    position: relative;
+}
+.menu-main-container-tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+}
+.menu-main-container-tittle h3{
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+}
+.menu-main-container-button-them{
+    width: 6rem;
+    height: 3rem;
+    background-color: #b53;
+    position: absolute;
+    right: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.menu-main-container-main{
+    margin-top: 4rem;
+    display: inline-table;
+    width: 100%;
+}
+.menu-main-container-main .bangsanpham{
+    width: 100%;
+    font-size: 0.9rem;
+}
+.tieudebangsanpham tr{
+    height: 3rem;
+    width: 100%;
+}
+.tieudebangsanpham tr th{
+    height: 3rem;
+    width: 100%;
+    border-top: 1px solid #b53;
+    border-bottom: 1px solid #b53;
+}
+.thanbangsanpham tr{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    transition: ease-in-out 0.2s;
+}
+.thanbangsanpham tr td{
+    height: 3rem;
+    margin: 0.5rem 0rem;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #b53;
+    border-bottom: 1px solid #b53;
+}
+.tieudebangsanpham tr th:nth-child(1){
+    width: 5%;
+}
+.tieudebangsanpham tr th:nth-child(2){
+    width: 10%;
+}
+.tieudebangsanpham tr th:nth-child(3){
+    width: 10%;
+}
+.tieudebangsanpham tr th:nth-child(4){
+    width: 22.5%;
+}
+.thanbangsanpham tr td:nth-child(5){
+    display: none;
+}
+.tieudebangsanpham tr th:nth-child(5){
+    width: 10%;
+}
+
+.tieudebangsanpham tr th:nth-child(6){
+    width: 11.5%;
+}
+.tieudebangsanpham tr th:nth-child(7){
+    width: 11.5%;
+}
+.tieudebangsanpham tr th:nth-child(8){
+    width: 7.5%;
+}
+.tieudebangsanpham tr th:nth-child(9){
+    width: 12%;
+}
+.menu-main-desc-tittle,.menu-main-desc-sum,.menu-main-desc-sum-value{
+    width: 33.33333333333333%;
+    height: 6rem;
+    margin: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+.menu-main-desc-tittle{
+    background: rgb(28,58,222);
+    background: linear-gradient(90deg, rgba(28,58,222,1) 0%, rgba(170,214,235,1) 76%);
+}
+.menu-main-desc-sum{
+    background: rgb(222,207,28);
+    background: linear-gradient(90deg, rgba(222,207,28,1) 0%, rgba(245,255,161,1) 76%);
+}
+.menu-main-desc-sum-value{
+    background: rgb(222,28,28);
+    background: linear-gradient(90deg, rgba(222,28,28,1) 0%, rgba(226,153,153,1) 76%);
+}
+.menu-main-container-button-them{
+    display: flex;
+    align-items: center;
+}
+.button-them-icon{
+    margin-left: 0.5rem;
+    display: flex;
+}
+.button-them-icon img{
+    margin: auto;
+    height: 1rem;
+    width: auto;
+}
+.button-them-content{
+    margin: 0rem 0.5rem;
+}
+.button-them-content span{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+.sanpham_le{
+    background-color: #e4e4e4;
+}
+.thanbangsanpham tr:hover{
+    background-color:#b53 ;
+    color: #fff;
+}
+.thanbangsanpham tr:hover.thanbangsanpham tr td:last-child{
+    background-color:#fff;
+}
+
+/* Thêm sản phẩm*/
+.table-them{
+    position: fixed;
+    background-color: rgba(102, 83, 77, 0.37);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    
+}
+.table-them-container{
+    padding: 1rem 2rem;
+    margin: auto;
+    height: 24rem;
+    width: 40rem;
+    background-color: #b53;
+    border-radius: 1rem;
+}
+.table-them-header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid;
+    color: #fff;
+}
+.table-them-header span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+.button-thoat{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.table-them-containers{
+    width: 100%;
+    height: 80%;
+    padding: 1.5rem;
+    color: #fff;
+}
+/* .table-them-header,.table-them-container{
+    width: 100%;
+}
+.table-them-header{
+    height: 20%;
+}
+.table-them-container{
+    height: 80%;
+} */
+.table-them-container-code,
+.table-them-container-desc,
+.table-them-container-cash,
+.table-them-container-chuc-nang{
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.table-them-container-code{
+    height: 15%;
+}
+.table-them-container-desc{
+    height: 60%;
+}
+.table-them-container-cash{
+    height: 15%;
+}
+.table-them-container-cash input{
+    width: 90%;
+}
+.table-them-container-chuc-nang{
+    height: 10%;
+    justify-content: flex-end;
+}
+.table-them-container-chuc-nang span{
+    margin: auto;
+}
+.table-them-container-chuc-nang-them,
+.table-them-container-chuc-nang-huy{
+    position: relative;
+    left: 3rem;
+    width: 15%;
+    padding: 0.4rem;
+    height: 130%;
+    display: flex;
+    margin-right: 1rem;
+    background-color: #b53;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.container-code-sp,.container-code-lsp,
+.container-desc-name,.container-desc-img{
+    width: 50%;
+    margin-left: 0.5rem;
+    display: flex;
+}
+.table-them-container-chuc-nang-them img,
+.table-them-container-chuc-nang-huy img{
+    width: 30%;
+    height: auto;
+    margin-right: 0.4rem;
+}
+.table-them-container-chuc-nang-them:hover,
+.table-them-container-chuc-nang-huy:hover{
+    transition: ease-in-out 0.4s;
+    background-color: #fff;
+    color: #b53;
+}
+.container-code-sp span,.container-code-lsp span{
+    margin: auto;
+    height: auto;
+    width: 80%;
+}
+.container-code-sp input{
+    height: 50%;
+    margin: auto;
+    width: 50%;
+}
+.container-code-lsp select{
+    height: 50%;
+    margin: auto;
+    width: 50%;
+}
+.container-desc-name,.container-desc-img{
+    display: flex;
+    
+}
+.container-desc-name span{
+    margin: auto;
+}
+.container-desc-name input{
+    width: 50%;
+    margin: auto;
+    height: 20%;
+}
+.container-desc-img .inputfile{
+   display: none;
+}
+#load{
+    border: 1px solid rgb(252, 252, 252);
+    background-color: #fff;
+    margin: auto;
+    width: 50%;
+    max-width: 100%;
+    height: 8rem;
+    background-size: cover;
+}
+
+.container-desc-img label{
+    margin: auto;
+    width: 50%;
+    margin-left: -1rem;
+    padding-left: 1.2rem;
+}
+
+
+/* Chức năng*/
+.chucnang{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.chucnang-hienthi,
+.chucnang-xoa,
+.chucnang-sua{
+    margin: auto;
+    cursor: pointer;
+    padding: 0.4rem;
+}
+.chucnang img{
+    width: 100%;
+    height: auto;
+    transition: ease-in-out .5s;
+    
+}
+.chucnang img:hover{
+    transform: scale(1.4);
+    
+}
+

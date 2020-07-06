@@ -1,0 +1,19 @@
+.scroll i{
+    position: fixed;
+    bottom: 4rem;
+    right: 3rem;
+    font-size: 45px;
+    background: #53382c;
+    padding: 7px 10px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #53382c;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease-in-out;
+  }
+  .scroll i:hover{
+    transition: .5s;
+    background: #53382c;
+  }

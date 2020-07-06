@@ -1,0 +1,33 @@
+.header-about-ring img{
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.4s infinite alternate; 
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+  }
+  .header-about-user img{
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: scalee 0.9s infinite alternate;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+    
+  }  
+.button-thoat:hover,
+.table-them-container-chuc-nang-them:hover.table-them-container-chuc-nang-them img,
+.table-them-container-chuc-nang-huy:hover.table-them-container-chuc-nang-huy img{
+    animation: scalee 1s infinite alternate;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+}
+
+  @keyframes shake {
+    0% { transform:  rotate(-11deg);
+         }
+    100% { transform:  rotate(11deg); }
+  }
+  @keyframes scalee {
+    0% { transform:  scale(0.8);}
+    100% { transform:  scale(1.05);}
+  }

@@ -1,0 +1,118 @@
+.Other-wrapper-box-mid-content{
+    width:700px;
+    height:300px;
+     margin:50px auto;
+    border:1px solid;
+    overflow:hidden;
+}
+.slides{
+    width:400%;
+     height:100%;
+     -webkit-animation:slide 16s infinite;
+     -moz-animation:slide 16s infinite;
+     animation:slide 16s infinite;
+}
+.slide-has-content-container--product{
+    
+}
+
+
+@-webkit-keyframes slide{
+    0%,100% {
+        margin-left:0%;
+    }
+
+    12% {
+        margin-left:0%;
+    }
+
+    24% {
+        margin-left:-33%;
+    }
+
+    36% {
+        margin-left:-33%;
+    }
+
+    48% {
+        margin-left:-66%;
+    }
+
+    60% {
+        margin-left:-66%;
+    }
+
+    72% {
+        margin-left:-66%;
+    }
+
+    84% {
+        margin-left:-99%;  
+    }
+}
+@-moz-keyframes slide{
+    0%,100% {
+        margin-left:0%;
+    }
+
+    12% {
+        margin-left:0%;
+    }
+
+    24% {
+        margin-left:-33%;
+    }
+
+    36% {
+        margin-left:-33%;
+    }
+
+    48% {
+        margin-left:-66%;
+    }
+
+    60% {
+        margin-left:-66%;
+    }
+
+    72% {
+        margin-left:-99%;
+    }
+
+    84% {
+        margin-left:-99%;  
+    }
+}
+@keyframes slide{
+    0%,100% {
+        margin-left:0%;
+    }
+
+    12% {
+        margin-left:0%;
+    }
+
+    24% {
+        margin-left:-33%;
+    }
+
+    36% {
+        margin-left:-33%;
+    }
+
+    48% {
+        margin-left:-66%;
+    }
+
+    60% {
+        margin-left:-66%;
+    }
+
+    72% {
+        margin-left:-99%;
+    }
+
+    84% {
+        margin-left:-99%;  
+    }
+}

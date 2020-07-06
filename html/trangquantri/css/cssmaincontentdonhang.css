@@ -1,0 +1,142 @@
+.tieudebangsanpham tr th:nth-child(1){
+    width: 5%;
+}
+.tieudebangsanpham tr th:nth-child(2){
+    width: 6%;
+}
+.tieudebangsanpham tr th:nth-child(3){
+    width: 12.5%;
+}
+.tieudebangsanpham tr th:nth-child(4){
+    width: 19%;
+}
+.tieudebangsanpham tr th:nth-child(5){
+    width: 11%;
+}
+.tieudebangsanpham tr th:nth-child(6){
+    width: 11.5%;
+}
+.tieudebangsanpham tr th:nth-child(7){
+    width: 10%;
+}
+.tieudebangsanpham tr th:nth-child(8){
+    width: 15%;
+}
+.tieudebangsanpham tr th:nth-child(9){
+    width: 10%;
+}
+/*********************/
+.thanbangsanpham tr td:nth-child(1){
+    width: 5%;
+}
+.thanbangsanpham tr td:nth-child(2){
+    width: 6%;
+}
+.thanbangsanpham tr td:nth-child(3){
+    width: 12.5%;
+}
+.thanbangsanpham tr td:nth-child(4){
+    width: 19%;
+}
+.thanbangsanpham tr td:nth-child(5){
+    width: 11%;
+}
+.thanbangsanpham tr td:nth-child(6){
+    width: 11.5%;
+}
+.thanbangsanpham tr td:nth-child(7){
+    width: 10%;
+}
+.thanbangsanpham tr td:nth-child(8){
+    width: 15%;
+}
+.tieudebangsanpham tr th:nth-child(9){
+    width: 10%;
+}
+
+/***********/
+.thanbangsanpham tr td:nth-child(5){
+    display: table-cell;
+}
+
+/* Thông tin hiển thị*/
+.table-them-container-code,
+.table-them-container-desc,
+.table-them-container-cash{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.container-code-sp,
+.container-code-lsp,
+.container-desc-name,
+.container-desc-img
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+.container-code-sp span,
+.container-code-lsp span,
+.container-desc-name span,
+.container-desc-img span,
+.container-cash-sum span,
+.container-cash-goc span,
+.container-cash-ban span{
+    width: 40%;
+}
+.container-code-sp input,
+.container-code-lsp input,
+.container-desc-name input,
+.container-desc-img input,
+.container-cash-sum input,
+.container-cash-goc input,
+.container-cash-ban select{
+    width: 60%;
+}
+
+.container-cash-sum,
+.container-cash-goc,
+.container-cash-ban{
+    width: 33.3333333333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+.tittle-img-has-img{
+    cursor: pointer;
+}
+.main-desc-tittle-img-more{
+    top: 12rem;
+    position: absolute;
+    right: 5rem;
+    cursor: pointer;
+    display: none;
+    z-index: 99999;
+}
+
+
+.tittle-img-more-xac-thuc,
+.tittle-img-more-chua-xac-thuc,
+.tittle-img-more-thanh-toan{
+    height: 1.5rem;
+    background-color: #b53;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    color: #fff;
+}
+
+.tittle-img-more-xac-thuc:hover,
+.tittle-img-more-chua-xac-thuc:hover,
+.tittle-img-more-thanh-toan:hover{
+    transition: ease-in 1s;
+    background-color: rgba(231, 94, 48, 0.781);
+    transform: scale(1.2rem);
+    cursor: pointer;
+}

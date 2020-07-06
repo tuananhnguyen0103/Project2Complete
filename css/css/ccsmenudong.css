@@ -1,0 +1,37 @@
+.menu__contain-Other{
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+}
+.has-content-wrapper{
+    max-width: 1200px;
+    padding: 0 1.2rem;
+    margin: 0 auto;
+}
+.has-content-wrapper-box-mid{
+    height: 100%;
+    width: 100%;
+}
+.meun_contain-Other-has-content{
+    display: flex;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+.has-content-container{
+    position: relative;
+    max-width: 400px;
+    height: 100%;
+    padding: 0 1rem;
+
+}
+.has-content--img{
+    overflow: hidden;
+    border: 1px solid #eee;
+    max-width: 100%;
+}
+.has-content--img a img{
+    
+}
+/* .has-content-container:nth-child(1){
+    background-color: blue;
+} */

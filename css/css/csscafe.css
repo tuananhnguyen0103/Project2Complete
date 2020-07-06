@@ -1,0 +1,121 @@
+.col-8,.col-4{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.menu__contain-boxMid{
+    padding: 45px 0;
+    background: #fbedd7;
+}
+.meun__contain-boxMid-container{
+    max-width: 1200px;
+    padding: 0 1.3rem;
+    margin: 0 auto;
+}
+.meun__contain-boxMid-container-has_mid{
+    width: 100%;
+}
+.container-has-mid-title{
+    width: auto;
+    position: relative;
+    margin: 0 0 2rem 0;
+}
+.container-has-mid-title--has-title{
+    
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #53382c;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: bold;
+
+}
+.container-has-mid-title--has-title>h2{
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.mod-content.row{
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+.mod-content-main.col-8{
+    padding: 0 1rem;
+}
+.main-the-content.desc{
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #53382c;
+    margin-bottom: 2rem;
+}
+.main-the-content.desc>a>img{
+    width: 100%;
+}
+.desc.img a img{
+    height: auto;
+    width: 100%;
+}
+/*Button hiện thị thêm*/
+.linkM{
+    line-height: 2.2rem;
+}
+.linkM>a{
+    color: #b22830;
+    border: solid 1px #b22830;
+    padding: 0.5rem 5rem;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+.linkM>a:hover{
+    background-color:#b22830 ;
+    color: #fff;
+}
+
+ 
+/*Content sidebar*/
+.sidebar-itemMenu{
+    display: flex;
+    margin-bottom: 2rem;
+    overflow: hidden;
+
+}
+
+.sidebar-itemMenu-img{
+    margin-right: 0.8rem;
+    
+}
+.sidebar-itemMenu-img a img{
+    height: 10rem;
+    width: 10rem;
+    transition: all 0.3s linear;
+}
+.sidebar-itemMenu-img a img:hover{
+    
+    transform: scale(1.08);
+}
+.itemMenu-caption-desc{
+    font-size: 0.95rem;
+    max-height: 69px;
+    line-height: 1.7rem;
+}
+.itemMenu-caption-tilte h3{
+    line-height: 2rem;
+    font-size: 2rem;
+}
+.itemMenu-caption-tilte a{
+    text-decoration: none;
+    color: #000;
+}
+.sidebar-itemMenu-caption a{
+    transition: all 0.3s linear;
+}
+.sidebar-itemMenu-caption a:hover{
+    cursor: pointer;
+    color: #b22830;
+}
+
+

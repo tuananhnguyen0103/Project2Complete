@@ -1,0 +1,76 @@
+
+  .main {
+    font-family:Arial;
+    width:500px;
+    display:block;
+    margin:0 auto;
+  }
+
+  .action{
+    display:block;
+    margin:100px auto;
+    width:100%;
+    text-align:center;
+  }
+  .action a {
+    display:inline-block;
+    padding:5px 10px; 
+    background:#f30;
+    color:#fff;
+    text-decoration:none;
+  }
+  .action a:hover{
+    background:#000;
+  }
+  
+  /**/
+  .btn-top {
+    background-image: url(../img/btn_top.png);
+    background-repeat: no-repeat;
+    border: medium none;
+    bottom: 20px;
+    cursor: pointer;
+    display: none;
+    height: 50px;
+    outline: medium none;
+    padding: 0;
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    z-index: 9999;
+  }
+  .slick-next
+  {
+      width: 3rem;
+      height: 3rem;
+        background-size: cover;
+      background-image: url(../../object/img/icons8-previous-50.png) !important;
+      
+      cursor: pointer;
+  }
+  .slick-prev{
+        width: 3rem;
+        height: 3rem;
+        background-size: cover;
+      background-image: url(../../object/img/icons8-previous-50.png) !important;
+      
+      cursor: pointer;
+  }
+  .slick-prev:hover{
+    background-image: url(../../object/img/icons8-previous-50.png) !important;
+  }
+  .slick-next:hover
+  {
+    background-image: url(../../object/img/icons8-previous-50.png) !important;
+  }
+  .slick-next::before, [dir="rtl"] .slick-prev::before 
+  {
+      content: ' ' !important;
+      background-color: red;
+  }
+  .slick-prev:before{
+    content: ' ' !important;
+  }
+  .slick-list{
+      margin: 0rem 2rem;
+  }

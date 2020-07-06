@@ -1,0 +1,18 @@
+.Other-wrapper-box-mid-title-has-title h3 {
+    color:#53382c;
+}
+.menu__contain-Other{
+    
+    overflow: hidden;
+}
+.menu__contain-Other::after {
+    content: "";
+    background-image: url(../../html/thucdon/img/hand-drawn-coffee-beans-vintage-sketch-coffee-vector-26316481.jpg);
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -10;   
+}

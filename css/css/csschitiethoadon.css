@@ -1,0 +1,286 @@
+.main{
+    padding: 2.4rem;
+}
+input{
+    outline: none;
+}
+.main-warrper{
+    max-width: 1200px;
+    padding: 0 1.3rem;
+    margin: 0 auto;
+}
+.main-container{
+    width: 100%;
+    height: 40rem;
+}
+.main-container-header{
+    height: 20%;
+    width: 100%;
+    padding: 1rem;
+}
+.main-container-header-tittle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #b53;
+}
+.main-container-header-tittle span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    color: #b53;
+    font-weight: 700;
+}
+.main-container-content{
+    height: 80%;
+    width: 100%;
+    padding: 1rem;
+}
+.main-container-content-both{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.main-container-content-information-customer{
+    width: 30%;
+    padding: 0.5rem;
+    height: 100%;
+    border: 1px solid #b53;
+    border-radius: 1rem;
+}
+.content-information-customer-tittle{
+    width: 100%;
+    height: 20%;
+    padding: 0.5rem;
+}
+.information-customer-tittle-has-tittle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.information-customer-tittle-has-tittle span{
+    font-size: 1.5rem;
+    color: #b53;
+}
+.information-customer-tittle-has-tittle span{
+    margin: auto;
+}
+.content-information-customer-wrapper{
+    width: 100%;
+    height: 80%;
+    padding: 0.5rem;
+    display: flex;
+}
+.information-customer-wrapper-container{
+    height: 80%;
+    margin: auto;
+    width: 100%;
+}
+.information-customer-table{
+    height: 80%;
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0 ;
+}
+.information-customer-table tr{
+    height: 20%;
+    width: 100%;
+}
+
+
+.information-customer-xacnhan{
+    height: 20%;
+    width: 100%;
+    padding: 0.5rem;
+}
+.information-customer-xacnhan-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.information-customer-xacnhan-donhang{
+    width: 30%;
+    height: 100%;
+    margin: 2.5%;
+    display: flex;
+}
+.information-customer-xacnhan-donhang.yes,
+.information-customer-xacnhan-donhang.no{
+    border: 1px solid #b53;
+    border-radius: 1rem;
+    color: #b53;
+    background-color: #fff;
+    cursor: pointer;
+}
+.information-customer-xacnhan-donhang.yes:hover,
+.information-customer-xacnhan-donhang.no:hover{
+    color: #fff;
+    background-color: #b53;
+    transition: ease-in-out 0.5s;
+}
+.information-customer-xacnhan-donhang span{
+    margin: auto;
+}
+
+
+
+
+
+
+
+/*Hóa đơn*/
+.main-container-content-information-bill{
+    width: 60%;
+    padding: 0.5rem;
+}
+.main-container-content-information-bill-wrapper{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #b53;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+}
+.content-information-bill-tittle{
+    height: 15%;
+    width: 100%;
+    padding: 0.5rem;
+}
+.information-bill-tittle-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.information-bill-tittle-container span{
+    margin: auto;
+    color: #b53;
+    font-size: 1.5rem;
+}
+.content-information-bill-container{
+    width: 100%;
+    height: 80%;
+    padding: 0.5rem;
+    overflow-y: scroll;
+
+}
+.content-information-bill-container::-webkit-scrollbar {
+    width: 2px;
+    background: rgba(255, 255, 255, 0.1);
+}
+.content-information-bill-container::-webkit-scrollbar-thumb{
+    background: rgba(240, 102, 10, 0.6);
+}
+.content-information-bill-total-cash{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.content-information-bill-total-cash span{
+    margin: 0 1rem;
+}
+.information-bill-container-tittle{
+    width: 100%;
+    height: 12%;
+    display: flex;
+}
+.information-bill-container-tittle div span{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.bill-container-tittle-img,
+.bill-container-tittle-name,
+.bill-container-tittle-soluong,
+.bill-container-tittle-tongtien{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0.5rem;
+    
+}
+.bill-container-tittle-img{
+    width: 25%;
+}
+.bill-container-tittle-name{
+    width: 25%;
+}
+.bill-container-tittle-soluong{
+    width: 25%;
+}
+.bill-container-tittle-tongtien{
+    width: 25%;
+}
+.information-bill-container-list{
+    width: 100%;
+    height: 88%;
+    padding: 0.5rem;
+}
+
+.information-bill-container-list-item{
+    display: flex;
+    width: 100%;
+    height: 25%;
+}
+.container-list-item-has-img,
+.container-list-item-has-name,
+.container-list-item-has-soLuong,
+.container-list-item-has-cash{
+    display: flex;
+    margin: auto;
+    height: 100%;
+}
+.container-list-item-has-img{
+    width: 25%;
+}
+.container-list-item-has-img img{
+    margin: auto;
+    height: 100%;
+}
+.container-list-item-has-name{
+    width: 25%;
+}
+.container-list-item-has-soLuong{
+    width: 25%;
+}
+.container-list-item-has-cash{
+    width: 25%;
+}
+.container-list-item-has-name>span,
+.container-list-item-has-soLuong>span,
+.container-list-item-has-cash>span{
+    margin: auto;
+}
+.has-soLuong-giam,
+.has-soLuong-tang{
+    margin: auto;
+    cursor: pointer;
+    width: 12%;
+    display: flex;
+    border: 1px solid #b53;
+    border-radius: 0.2rem;
+    justify-content: center;
+}
+.has-soLuong-giam span,
+.has-soLuong-tang span{
+    margin: auto;
+}
+.has-cash-delete{
+    margin: auto;
+    cursor: pointer;
+    
+}
+.container-list-item-has-name .idspanpham{
+    display: none;
+}
+
+
+
+
+
+
+
